@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <form method="POST">
+                <label for="sdate">Season Start Date:</label>
+                <input name="sdate" type="date">
+                <label for="edate">Season End Date:</label>
+                <input name="edate" type="date">
+                <fieldset id='budgetCats'>
+                    <legend>Budget Categories</legend>
+                    <div>
+                        <span>
+                            <div class='delete'>
+                                <div class='backSlash'></div>
+                                <div class='forSlash'></div>
+                            </div>
+                            <input class='budgetCat' type='text' value='Fuel'>
+                            <input class='budget' type='number' value='0'>
+                        </span>
+                        <span>
+                            <div class='delete'>
+                                <div class='backSlash'></div>
+                                <div class='forSlash'></div>
+                            </div>
+                            <input class='budgetCat' type='text' value='Groceries'>
+                            <input class='budget' type='number' value='0'>
+                        </span>
+                        <span>
+                            <div class='delete'>
+                                <div class='backSlash'></div>
+                                <div class='forSlash'></div>
+                            </div>
+                            <input class='budgetCat' type='text' value='SAR Snacks'>
+                            <input class='budget' type='number' value='0'>
+                        </span>
+                        <span>
+                            <div class='delete'>
+                                <div class='backSlash'></div>
+                                <div class='forSlash'></div>
+                            </div>
+                            <input class='budgetCat' type='text' value='Base Supplies'>
+                            <input class='budget' type='number' value='0'>
+                        </span>
+                        <span>
+                            <div class='delete'>
+                                <div class='backSlash'></div>
+                                <div class='forSlash'></div>
+                            </div>
+                            <input class='budgetCat' type='text' value='Medical Supplies'>
+                            <input class='budget' type='number' value='0'>
+                        </span>
+                        <span>
+                            <div class='delete'>
+                                <div class='backSlash'></div>
+                                <div class='forSlash'></div>
+                            </div>
+                            <input class='budgetCat' type='text' value='Other'>
+                            <input class='budget' type='number' value='0'>
+                        </span>
+                    </div>
+                    <button id='addBudgetCat' type="button">Add</button>
+                </fieldset>
+                <button type="submit">Download</submit>
+            </form>
+        </main>
+        <script type="text/javascript" src="getinput.js"></script>
+    </body>
+</html>

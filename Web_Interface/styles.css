@@ -1,0 +1,60 @@
+:root {
+    --del-X-color: white;
+    --del-bg-color: red;
+    --del-size: 20px;
+    --del-X-width: 10%;
+    --del-X-height: 70%;
+}
+
+html, body {
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.delete {
+    position: relative;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: var(--del-bg-color, red);
+    width: var(--del-size);
+    height: var(--del-size);
+}
+
+.delete:hover {
+    background: rgb(100, 0, 0);
+}
+
+.backSlash {
+    position: absolute;
+    top: calc( (100% - var(--del-X-height, 70%)) / 2);
+    left: calc( (100% - var(--del-X-width, 15%)) / 2);
+    transform: rotate(-45deg);
+    background: var(--del-X-color, white);
+    width: var(--del-X-width, 15%);
+    height: var(--del-X-height, 70%);
+}
+
+.forSlash {
+    position: absolute;
+    top: calc( (100% - var(--del-X-height, 70%)) / 2);
+    left: calc( (100% - var(--del-X-width, 15%)) / 2);
+    transform: rotate(45deg);
+    background: var(--del-X-color, white);
+    width: var(--del-X-width, 15%);
+    height: var(--del-X-height, 70%);
+}
