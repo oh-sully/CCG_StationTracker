@@ -1,16 +1,17 @@
+const budgetHTML =
+    "<span>" + 
+        "<div class='delete'>" + 
+            "<div class='backSlash'></div>" + 
+            "<div class='forSlash'></div>" + 
+        "</div>" + 
+        "<input class='budgetCat' type='text' placeholder='Budget Category'>" + 
+        "<input class='budget' type='number' placeholder='Budget'>" + 
+    "</span>";
+
 $('#budgetCats').on('click', 'div.delete', function() {
-    $(this).parent('span').remove()
-    console.log("Deleted")
+    $(this).parent('span').remove();
 })
 
 $('#addBudgetCat').on('click', () => {
-    $('#budgetCats > div').append(
-        "<span>" + 
-            "<div class='delete'>" + 
-                "<div class='backSlash'></div>" + 
-                "<div class='forSlash'></div>" + 
-            "</div>" + 
-            "<input class='budgetCat' type='text'>" + 
-            "<input class='budget' type='number'>" + 
-        "</span>")
+    $('#budgetCats > div').append(budgetHTML);
 })
